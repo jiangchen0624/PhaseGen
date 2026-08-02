@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+
+# Model checkpoints & large files
+*.pt
+*.pth
+*.bin
+outputs/checkpoints/
+outputs/logs/
+
+# Data
+data/embeddings/
+data/processed/
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.venv/
+venv/
+data/llps-benchmark/
