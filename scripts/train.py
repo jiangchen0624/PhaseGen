@@ -1,15 +1,18 @@
 #!/usr/bin/env python
-"""Fast training on pre-extracted ESM-2 embeddings.
+"""Fast training on pre-extracted protein language model embeddings.
 
-This skips the heavy PLM forward pass. CTN + Performer + KAN trains in ~30s/epoch,
-enabling rapid hyperparameter search, architecture exploration, and ablation studies.
+PhaseGen uses ProtT5-XL embeddings (1024-dim) as frozen input. This training
+script loads pre-computed .pt embedding files and trains the downstream
+CTN + Performer + StickerAttention + MLP architecture.
 
-Usage:
-    # First extract embeddings (one-time):
-    python scripts/extract_embeddings.py --model esm2_t33_650M_UR50D
+See README.md for the full data preparation pipeline (extract embeddings →
+compute features → create splits → train).
 
-    # Then fast train:
-    python scripts/train_fast.py --epochs 50
+Usage (after data preparation):
+    python scripts/train.py --embedding_dir data/my_data/prott5_embeddings \\
+        --label_csv data/my_data/labels.csv --splits_dir data/my_data/splits \\
+        --seq_feat_dir data/my_data/seq_features --output_dir checkpoints/my_exp \\
+        --epochs 30 --use_sticker_pooling --use_swa
 """
 
 import os

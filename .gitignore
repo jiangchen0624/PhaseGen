@@ -1,35 +1,26 @@
-# Python
-__pycache__/
-*.py[cod]
-*.so
-*.egg-info/
-dist/
-build/
-
-# Model checkpoints & large files
+# Data — pre-computed files (too large for Git; download from Zenodo/Figshare)
+data/combined/
+data/embeddings/
+data/idr_features/
+data/llps-benchmark/
+data/phasepred_benchmark/
+data/processed/
+data/prott5_embeddings/
+data/raw/
+data/splits/
 *.pt
 *.pth
 *.bin
-outputs/checkpoints/
-outputs/logs/
 
-# Data
-data/embeddings/
-data/processed/
+# Model checkpoints
+checkpoints/
+outputs/
 
-# IDE
-.vscode/
-.idea/
+# Publication administration (not code)
+_gen_waiver_pdf.py
+apc_waiver_letter.*
+waiver_correction_email.txt
 
-# Jupyter
-.ipynb_checkpoints/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Environment
-.env
-.venv/
-venv/
-data/llps-benchmark/
+# Literature review (not code)
+gen_literature_review.py
+literature_review.csv
