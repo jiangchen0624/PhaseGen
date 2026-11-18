@@ -3,9 +3,9 @@
 Deep learning model with StickerAttention pooling for phase-separating protein prediction.
 
 **Paper:** *PhaseGen: A Deep Learning Model with Sticker-Attention Pooling for Phase-Separating Protein Prediction Reveals Cross-Dataset Generalization Barriers*  
-**Authors:** Jianglong Zhu, Taigang Liu  
+**Author:** Jianglong Zhu  
 **Venue:** Briefings in Bioinformatics (2026)  
-**Contact:** jianglong_0624@163.com, tgliu@shou.edu.cn
+**Contact:** jianglong_0624@163.com
 
 ---
 
@@ -251,7 +251,7 @@ See `requirements.txt` for full list.
 @article{zhu2026phasegen,
   title={PhaseGen: A Deep Learning Model with Sticker-Attention Pooling for
          Phase-Separating Protein Prediction Reveals Cross-Dataset Generalization Barriers},
-  author={Zhu, Jianglong and Liu, Taigang},
+  author={Zhu, Jianglong},
   journal={Briefings in Bioinformatics},
   year={2026},
   note={In press}
